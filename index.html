@@ -4,32 +4,94 @@
     <title>Leaflet Cluster Example</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha384-VzLXTJGPSyTLX6d96AxgkKvE/LRb7ECGyTxuwtpjHnVWVZs2gp5RDjeM/tgBnVdM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.0/dist/MarkerCluster.css"
+      integrity="sha384-pmjIAcz2bAn0xukfxADbZIb3t8oRT9Sv0rvO+BR5Csr6Dhqq+nZs59P0pPKQJkEV"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.0/dist/MarkerCluster.Default.css"
+      integrity="sha384-wgw+aLYNQ7dlhK47ZPK7FRACiq7ROZwgFNg0m04avm4CaXS+Z9Y7nMu8yNjBKYC+"
+      crossorigin="anonymous"
+    />
 
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-    <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
-    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js'></script>
+    <script
+      src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"
+      integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js"
+      integrity="sha384-89yDmbSkL9reFc77m10ZbqLaUMf1sp7FAJs2oAD/rczNnY7I+17yN9KML6tpYpCk"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <h1>Leaflet Cluster Example</h1>
 
-    <p>Here's an interactive map indicating where airports and train stations are located around the world.  The data comes from <a href="http://openflights.org/data.html" target="_blank">OpenFlights.org</a>.
+    <p>
+      Here's an interactive map indicating where airports and train stations are
+      located around the world. The data comes from
+      <a href="http://openflights.org/data.html" target="_blank"
+        >OpenFlights.org</a
+      >.
+    </p>
 
-    <div id="map" style="width: 800px; height: 500px; border: 1px solid #AAA;"></div>
+    <div
+      id="map"
+      style="width: 800px; height: 500px; border: 1px solid #aaa"
+    ></div>
 
     <div>
-      <p>An example of how to use <a href="https://github.com/Leaflet/Leaflet.markercluster" target="_blank">Leaflet.markercluster</a>.
-      <p>From the article <a href="https://asmaloney.com/2015/06/code/clustering-markers-on-leaflet-maps" target="_blank">Clustering Markers On Leaflet Maps</a>
-      <p>Andy Maloney // <a href="https://asmaloney.com" target="_blank">asmaloney.com</a>
-      <br/>10 June 2015
+      <p>
+        An example of how to use
+        <a
+          href="https://github.com/Leaflet/Leaflet.markercluster"
+          target="_blank"
+          >Leaflet.markercluster</a
+        >.
+      </p>
+      <p>
+        From the article
+        <a
+          href="https://asmaloney.com/2015/06/code/clustering-markers-on-leaflet-maps"
+          target="_blank"
+          >Clustering Markers On Leaflet Maps</a
+        >
+      </p>
+      <p>
+        Andy Maloney //
+        <a href="https://asmaloney.com" target="_blank">asmaloney.com</a>
+        <br />10 June 2015
+      </p>
 
-      <p><b>[16 Jul 2016]</b> Switched to Leaflet 0.7.7.
+      <p>
+        <b>[06 May 2021]</b>        
+        <ul>
+          <li>Updated to Leaflet 1.7.1, leaflet.markercluster 1.5.0, and jQuery 3.6.0.</li>
+          <li>Added <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">Subresource Integrity</a> to CSS and CDN JavaScript.</li>
+          <li>All files reformatted with <a href="https://prettier.io/">prettier</a>.</li>
+          <li>Use <i>https</i> for URLs.</li>
+        </ul>
+      </p>
+      <p><b>[16 Jul 2016]</b> Switched to Leaflet 0.7.7.</p>
     </div>
 
-    <script type='text/javascript' src='maps/markers.js'></script>
-    <script type='text/javascript' src='maps/leaf-demo.js'></script>
+    <script type="text/javascript" src="maps/markers.js"></script>
+    <script type="text/javascript" src="maps/leaf-demo.js"></script>
   </body>
 </html>
